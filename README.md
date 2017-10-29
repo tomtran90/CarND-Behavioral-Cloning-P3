@@ -44,7 +44,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 I used the NVIDIA Architecture that was introduced in the lecture. It works and it's not too complicated.
 
-'''
+```
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -75,9 +75,9 @@ dense_4 (Dense)              (None, 1)                 11
 Total params: 981,819.0
 Trainable params: 981,819.0
 Non-trainable params: 0.0
-'''
+```
 
-#### 2. Appropriate training data
+#### 2. Training data
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road. I aslo made sure to combat the cases where the car drove to the lake, to the sand, or hit the curve.
 
