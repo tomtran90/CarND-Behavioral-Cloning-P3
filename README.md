@@ -14,6 +14,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/1.png "Recovery Image"
 [image2]: ./examples/2.png "Recovery Image"
 [image3]: ./examples/3.png "Center Lane Image"
+[image4]: ./examples/4.png "Center Lane Image"
 
 ---
 #### 1. Files Submitted 
@@ -39,7 +40,7 @@ The model.py file contains the code for training and saving the convolution neur
 #### 1. Model Architecture
 
 I used the NVIDIA Architecture that was introduced in the lecture. It works and it's not too complicated.
-
+![alt text][image4]
 ```
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
