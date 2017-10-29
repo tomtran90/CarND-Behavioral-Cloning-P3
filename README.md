@@ -93,6 +93,6 @@ These images show what a recovery looks like in autonomous mode where the car ha
 
 After training with the data above, my car drove into the lake and the sand and hit the curve at certain points of the track. So I had to create more data to train the model better at these points of the track (not the entire track). The car finally stayed on track and did not hit anything.
 
-My final data set had 37,152 number of data points. I preprocessed this data by cropping the unnecessary part of the image.
+My final data set had 37,152 data points. I preprocessed this data by cropping the unnecessary part of the image.
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3 as evidenced by both training and validation errors decreasing and plateauing over 3 epochs. I used an Adam optimizer so that manually training the learning rate wasn't necessary.
