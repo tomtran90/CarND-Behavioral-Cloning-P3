@@ -1,7 +1,3 @@
-#**Behavioral Cloning** 
-
----
-
 **Behavioral Cloning Project**
 
 The goals / steps of this project are the following:
@@ -84,19 +80,19 @@ Training data was chosen to keep the vehicle driving on the road. I used a combi
 
 #### 3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
+To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving in autonomous mode:
 
 ![alt text][image3]
 
 I then recorded it driving in the other direction to reduce over fitting. To augment the data, I also flipped images and angles so that we would have twice the number of records. I also recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recover from the sides. 
 
-These images show what a recovery looks like:
+These images show what a recovery looks like in autonomous mode where the car has learned the behavior:
 
 ![alt text][image1]
 ![alt text][image2]
 
-After training with the data above, my car drove into the lake and the sand and hit the curve at certain points of the track. So I had to create more data to train the model better at these points of the track. The car finally stayed on track.
+After training with the data above, my car drove into the lake and the sand and hit the curve at certain points of the track. So I had to create more data to train the model better at these points of the track (not the entire track). The car finally stayed on track and did not hit anything.
 
 My final data set had 37,152 number of data points. I preprocessed this data by cropping the unnecessary part of the image.
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3 as evidenced by both training and validation errors decreasing and plateauing over 3 epochs. I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3 as evidenced by both training and validation errors decreasing and plateauing over 3 epochs. I used an Adam optimizer so that manually training the learning rate wasn't necessary.
